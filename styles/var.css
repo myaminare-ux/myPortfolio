@@ -1,10 +1,54 @@
 /* var.css */
 
 :root {
+    /* 색상 */
     --color-background:#fff;
+    --color-black:#000;
     --color-main:#B7A5F6;
     --color-sub:#DCCEF6;
     --color-sub2:#FEFDFF;
+    --color-title:#6F68C9;
+    --color-tool:#F6F6F6;
+    --color-project:#F8F5FF;
+
+    /* 폰트 크기 */
+    --font-size-14:0.875em;
+    --font-size-15:0.938em;
+    --font-size-18:1.125em;
+    --font-size-20:1.25em;
+    --font-size-24:1.5em;
+    --font-size-25:1.563em;
+    --font-size-34:2.125em;
+    --font-size-44:2.75em;
+    --font-size-80:5em;
+
+    /* 폰트 두께 */
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+
+    /* 자간 */
+    --letter-spacing-nomal:-0.02em;
+
+    /* 행간 */
+    --line-height-m:1.5;
+
+    /* 모서리 둥글기 */
+    --radius-10:10px;
+    --radius-20:20px;
+    --radius-30:30px;
+    --radius-50:50px;
+    --radius-130:130px;
+
+    /* 간격 */
+    --spacing-20:20px;
+    --spacing-40:40px;
+    --spacing-50:50px;
+    --spacing-80:80px;
+    --spacing-120:120px;
+    --spacing-160:160px;
+    --spacing-350:350px;
+    --spacing-450:450px;
 }
 
 

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/var.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/animation.css">
     <script src="./scripts/index.js" defer></script>
     <!--swiper 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -29,19 +30,103 @@
             <!-- 개별 슬라이드 -->
             <!-- 1행-인트로 -->
             <div class="swiper-slide" id="intro">
+                <!-- 테두리 전용 div -->
+                <div class="intro_border"></div>
+                <!-- 실제 컨텐츠가 들어가는 div -->
                 <div class="container">
                     <p class="sub_title">UIUX DESIGN PORTFOLIO</p>
                     <div class="img_wrap">
                         <img class="main_title" src="./images/intro_title.png" alt="생각과-디테일을 이어주는 웹디자이너 박은진입니다.">
                         <img class="scroll" src="./images/scroll.png" alt="스크롤을 내려주세요.">
-                    </div>
+                    </div><!-- e:img_wrap -->
                 </div><!-- e:container -->
             </div><!-- e:intro -->
             <!-- ----1행 끝---- -->
             <!-- 2행-프로필 -->
             <div class="swiper-slide" id="profile">
                 <div class="container">
-                    
+                    <h2 class="profile_title">PROFILE</h2>
+                    <div class="profile_wrap">
+                        <!-- ---- 왼쪽 : 사진, 개인정보 ---- -->
+                        <div class="photo_side">
+                            <p class="photo"><!-- 증명사진은 background-image로 처리 --></p>
+                            <div class="user_info">
+                                <div class="name">
+                                    <h3>이름</h3>
+                                    <p class="name_text">
+                                        <span class="name_ko">박은진</span>
+                                        <span class="name en">Park Eun Jin</span>
+                                    </p><!-- e:name_text -->
+                                </div><!-- e:name -->
+                                <div class="birth">
+                                    <h3>생년월일</h3>
+                                    <p class="birth_text">2003. 06. 12</p>
+                                </div><!-- e:birth -->
+                                <div class="phone">
+                                    <h3>연락처</h3>
+                                    <p class="phone_text">010 - 7515 - 6867</p>
+                                </div><!-- e:phone -->
+                                <div class="email">
+                                    <h3>이메일</h3>
+                                    <p class="email_text">irin1616@naver.com</p>
+                                </div><!-- e:email -->
+                            </div><!-- e:user_info -->
+                        </div><!-- e:photo_side -->
+                        <!-- ---- 오른쪽 : 이력서 ---- -->
+                        <div class="info_side">
+                            <!-- ---- 왼쪽 : 자격증, 알바, 스킬 ---- -->
+                            <div class="left_side">
+                                <!-- Lisence 섹션 -->
+                                <div class="info_box">
+                                    <h3>Lisence</h3>
+                                    <ul class="info_list">
+                                        <li>
+                                            <span class="date">25.06</span>
+                                            <span class="desc">제과기능사</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">24.07</span>
+                                            <span class="desc">제빵기능사</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">24.07</span>
+                                            <span class="desc">병원코디네이터 1급</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">23.10</span>
+                                            <span class="desc">Barista Skills Foundation</span>
+                                        </li>
+                                    </ul><!-- e:info_list -->
+                                </div><!-- e:info_box -->
+                                <!-- Experience 섹션 -->
+                                <div class="info_box">
+                                    <h3>Experience</h3>
+                                    <ul class="info_list">
+                                        <li>
+                                            <span class="date">25.01 ~ 25.11</span>
+                                            <span class="desc">(주)엔스 - 포장, 제품 생산 및 검수</span>
+                                        </li>
+                                    </ul><!-- e:info_list -->
+                                </div><!-- e:info_box -->
+                                <!-- Skill & Toll 섹션 -->
+                                <div class="info_box">
+                                    <h3>Skill & Toll</h3>
+                                    <ul class="skill_grid">
+                                        <li class="skill_icon"><img src="./images/figma_icon.png" alt="Figma"><span>Figma</span></li>
+                                        <li class="skill_icon"><img src="./images/phtoshop_icon.png" alt="Photoshop"><span>Photoshop</span></li>
+                                        <li class="skill_icon"><img src="./images/illustrator_icon.png" alt="Illustrator"><span>Illustrator</span></li>
+                                        <li class="skill_icon"><img src="./images/html_icon.png" alt="HTML5"><span>HTML5</span></li>
+                                        <li class="skill_icon"><img src="./images/css_icon.png" alt="CSS3"><span>CSS3</span></li>
+                                        <li class="skill_icon"><img src="./images/javaScript_icon.png" alt="Java Script"><span>Java Script</span></li>
+                                        <li class="skill_icon"><img src="./images/gitHub_icon.png" alt="Git Hub"><span>Git Hub</span></li>
+                                        <li class="skill_icon"><img src="./images/notion_icon.png" alt="Notion"><span>Notion</span></li>
+                                    </ul><!-- e:skill_grid -->
+                                </div><!-- e:info_box -->
+                            </div><!-- e:left_side -->
+                            <!-- ---- 오른쪽 : 교육, 키워드 ---- -->
+                            <div class="right_side"></div>
+                        </div><!-- e:info_side -->
+                    </div><!-- e:profile_wrap -->
                 </div><!-- e:container -->
             </div><!-- e:profile -->
             <!-- ----2행 끝---- -->
