@@ -1,5 +1,14 @@
-:root {}
+/* var.css */
 
+:root {
+    --color-background:#fff;
+    --color-main:#B7A5F6;
+    --color-sub:#DCCEF6;
+    --color-sub2:#FEFDFF;
+}
+
+
+/* Paperozi 폰트 적용 */
 @font-face {
     font-family: 'Paperozi';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');

@@ -1,0 +1,19 @@
+/* index.css */
+
+/* 전체 디자인 */
+html {scroll-behavior:smooth;}
+.swiper {height:100vh; width:100vw; position:relative;}
+.swiper > .swiper-wrapper {}
+.swiper > .swiper-wrapper > .swiper-slide {max-width:1920px; height:100vh; overflow:hidden;}
+
+/* 개별 디자인 */
+/* ---------------------------------- 1행-인트로 */
+.main_slide .swiper-wrapper #intro {
+    background:linear-gradient(180deg, #B7A5F6 40%, #DCCEF6 100%);
+}
+.main_slide .swiper-wrapper #intro .container {}
+.main_slide .swiper-wrapper #intro .container .sub_title {}
+.main_slide .swiper-wrapper #intro .container .img_wrap {}
+.main_slide .swiper-wrapper #intro .container .img_wrap .main_title {}
+.main_slide .swiper-wrapper #intro .container .img_wrap .scroll {}
+/* ---------------------------------- 2행-프로필 */

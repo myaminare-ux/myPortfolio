@@ -7,9 +7,9 @@
     <meta name="description" content="생각과 디테일을 이어주는 웹디자이너 박은진입니다.">
     <title>포트폴리오 | 박은진</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/8592/8592334.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="var.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/var.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <script src="./scripts/index.js" defer></script>
     <!--swiper 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -18,8 +18,74 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- 전체 슬라이드 묶음 -->
+    <main class="swiper main_slide">
+        <!-- 움직이는 대상 -->
+        <div class="swiper-wrapper">
+            <!-- 개별 슬라이드 -->
+            <!-- 1행-인트로 -->
+            <div class="swiper-slide" id="intro">
+                <div class="container">
+                    <p class="sub_title">UIUX DESIGN PORTFOLIO</p>
+                    <div class="img_wrap">
+                        <img class="main_title" src="./images/intro_title.png" alt="생각과-디테일을 이어주는 웹디자이너 박은진입니다.">
+                        <img class="scroll" src="./images/scroll.png" alt="스크롤을 내려주세요.">
+                    </div>
+                </div><!-- e:container -->
+            </div><!-- e:intro -->
+            <!-- ----1행 끝---- -->
+            <!-- 2행-프로필 -->
+            <div class="swiper-slide" id="profile">
+                <div class="container">
+                    
+                </div><!-- e:container -->
+            </div><!-- e:profile -->
+            <!-- ----2행 끝---- -->
+            <!-- 3행-웹&앱 프로젝트 -->
+            <div class="swiper-slide" id="project">
+                <div class="container"></div>
+            </div><!-- e:project -->
+            <!-- ----3행 끝---- -->
+            <!-- 4행-오롤리데이 리디자인 -->
+            <div class="swiper-slide" id="old">
+                <div class="container"></div>
+            </div><!-- e:old -->
+            <!-- ----4행 끝---- -->
+            <!-- 5행-TS 트릴리온 리디자인 -->
+            <div class="swiper-slide" id="ts">
+                <div class="container"></div>
+            </div><!-- e:ts -->
+            <!-- ----5행 끝---- -->
+            <!-- 6행-꿈 다이어리 -->
+            <div class="swiper-slide" id="dream">
+                <div class="container"></div>
+            </div><!-- e:dream -->
+            <!-- ----6행 끝---- -->
+            <!-- 7행-그래픽 디자인(포스터) -->
+            <div class="swiper-slide" id="poster">
+                <div class="container"></div>
+            </div><!-- e:poster -->
+            <!-- ----7행 끝---- -->
+            <!-- 8행-그래픽 디자인(상세 페이지) -->
+            <div class="swiper-slide" id="detail">
+                <div class="container"></div>
+            </div><!-- e:detail -->
+            <!-- ----8행 끝---- -->
+            <!-- 9행-마무리 -->
+            <div class="swiper-slide" id="finish">
+                <div class="container"></div>
+            </div><!-- e:finish -->
+            <!-- ----9행 끝---- -->
+        </div><!-- e:swiper-wrapper -->
+        <!-- 스와이퍼 랩퍼 끝 -->
+    </main><!-- e:swiper -->
+    <!-- 스와이퍼 끝 -->
+    <!-- 7행 이미지 클릭 시 크게 나오게 하기 -->
+    <!-- 8행 이미지 클릭 시 크게 나오게 하기 -->
+    <!-- 탭 메뉴 버튼 -->
 </body>
 </html>
