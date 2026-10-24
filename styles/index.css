@@ -5,6 +5,7 @@ html {scroll-behavior:smooth;}
 .swiper {height:100vh; width:100vw; position:relative;}
 .swiper > .swiper-wrapper {}
 .swiper > .swiper-wrapper > .swiper-slide {max-width:1920px; height:100vh; overflow:hidden;}
+.swiper > .swiper-wrapper > .swiper-slide > .container {width:100%; height:100%;}
 
 /* 개별 디자인 */
 /* ---------------------------------- 1행-인트로 */
@@ -16,7 +17,7 @@ html {scroll-behavior:smooth;}
     position:absolute; top:45px; bottom:45px; left:50px; right:50px;
     border:3px solid var(--color-background);
 }
-.main_slide .swiper-wrapper #intro .container {width:100%; height:100%;}
+.main_slide .swiper-wrapper #intro .container {}
 .main_slide .swiper-wrapper #intro .container .sub_title {text-align:center; font-size:var(--font-size-20); font-weight:var(--font-weight-medium); color:var(--color-background);}
 .main_slide .swiper-wrapper #intro .container .img_wrap {}
 .main_slide .swiper-wrapper #intro .container .img_wrap .main_title {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
@@ -25,4 +26,63 @@ html {scroll-behavior:smooth;}
     width:50px; height:50px;
     animation:scroll 1s linear infinite alternate;
 }
+
 /* ---------------------------------- 2행-프로필 */
+.main_slide .swiper-wrapper #profile {background:var(--color-sub2); padding:var(--spacing-120);}
+.main_slide .swiper-wrapper #profile .container {/* flex-col-between-start 적용중 */}
+.main_slide .swiper-wrapper #profile .container .profile_title {font-size:var(--font-size-44); font-weight:var(--font-weight-semibold); color:var(--color-title);}
+.main_slide .swiper-wrapper #profile .container .profile_title::after {
+    content:""; display:block; 
+    width:60px; height:6px; margin-top:16px;
+    background:var(--color-title);
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap {
+    /* flex-row-between-center 적용중 */
+    width:100%;
+}
+/* ---- 큰 왼쪽 : 사진, 개인정보 ---- */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side {
+    /* flex-col-nowrap 적용중 */
+    gap:60px;
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .photo {
+    width:350px; height:450px; border-radius:130px 130px 0 0;
+    background:var(--color-tool);
+    background-image:url(../images/self_photo.jpg);
+    background-size:cover; background-position:center;
+    background-repeat:no-repeat;
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info {
+    /* flex-col-nowrap 적용중 */
+    gap:14px;
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info div {display:flex; flex-flow:row nowrap;}
+/* 사진 아래에 있는 개인정보 통합 디자인 */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info h3 {width:74px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info p {font-weight:var(--font-weight-medium);}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info p span {font-weight:var(--font-weight-medium);}
+/* 사진 아래에 있는 개인정보 개인 디자인 */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info p .name_ko {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info p .name_en {font-size:var(--font-size-14);}
+/* ---- 큰 오른쪽 : 이력서 ---- */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side {}
+/* ---- 작은 왼쪽 : 자격증, 알바, 스킬 통합 디자인 ---- */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box h3 {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li .date {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li .desc {}
+/* Skill & Toll 섹션 통합 디자인 */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box .skill_grid .skill_icon img {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box .skill_grid .skill_icon span {}
+/* ---- 작은 오른쪽 : 교육, 키워드 통합 디자인 ---- */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box h3 {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li .date {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li .desc {}

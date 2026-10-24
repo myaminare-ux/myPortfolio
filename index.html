@@ -44,18 +44,18 @@
             <!-- ----1행 끝---- -->
             <!-- 2행-프로필 -->
             <div class="swiper-slide" id="profile">
-                <div class="container">
+                <div class="container flex-col-between-start">
                     <h2 class="profile_title">PROFILE</h2>
-                    <div class="profile_wrap">
+                    <div class="profile_wrap flex-row-between-center">
                         <!-- ---- 왼쪽 : 사진, 개인정보 ---- -->
-                        <div class="photo_side">
+                        <div class="photo_side flex-col-nowrap">
                             <p class="photo"><!-- 증명사진은 background-image로 처리 --></p>
-                            <div class="user_info">
+                            <div class="user_info flex-col-nowrap">
                                 <div class="name">
                                     <h3>이름</h3>
                                     <p class="name_text">
                                         <span class="name_ko">박은진</span>
-                                        <span class="name en">Park Eun Jin</span>
+                                        <span class="name_en">Park Eun Jin</span>
                                     </p><!-- e:name_text -->
                                 </div><!-- e:name -->
                                 <div class="birth">
@@ -124,7 +124,59 @@
                                 </div><!-- e:info_box -->
                             </div><!-- e:left_side -->
                             <!-- ---- 오른쪽 : 교육, 키워드 ---- -->
-                            <div class="right_side"></div>
+                            <div class="right_side">
+                                <!-- Education 섹션 -->
+                                <div class="info_box">
+                                    <h3>Education</h3>
+                                    <!-- 학교 모음 -->
+                                    <ul class="info_list">
+                                        <li>
+                                            <span class="date">24.02</span>
+                                            <span class="desc">인천재능대학교 호텔외식조리과(베이커리 카페 전공) 졸업</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">22.01</span>
+                                            <span class="desc">신명여자고등학교 졸업</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">19.02</span>
+                                            <span class="desc">간석여자중학교 졸업</span>
+                                        </li>
+                                    </ul><!-- e:info_list (top) -->
+                                    <!-- 교육 모음 -->
+                                    <ul class="info_list">
+                                        <li>
+                                            <span class="date">26.10</span>
+                                            <span class="desc">UI/UX 반응형 웹디자인 & 웹퍼블리셔 양성과정 수료</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">24.05</span>
+                                            <span class="desc">제과기능사 수료</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">24.04</span>
+                                            <span class="desc">디저트 수료</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">24.03</span>
+                                            <span class="desc">제빵기능사 수료</span>
+                                        </li>
+                                    </ul><!-- e:info_list (btm) -->
+                                </div><!-- e:info_box -->
+                                <!-- My Keyword 섹션 -->
+                                <div class="info_box">
+                                    <h3>My Keyword</h3>
+                                    <ul class="keyword_list">
+                                        <li>섬세하게 관찰하는</li>
+                                        <li>상상력이 풍부한</li>
+                                        <li>감성적인</li>
+                                        <li>진심을 담는</li>
+                                        <li>ISFP</li>
+                                        <li>취미는 노래 듣기와 소설 보기</li>
+                                        <li>은근한 완벽주의</li>
+                                    </ul><!-- e:keyword_list -->
+                                </div><!-- e:info_box -->
+                            </div><!-- e:right_side -->
                         </div><!-- e:info_side -->
                     </div><!-- e:profile_wrap -->
                 </div><!-- e:container -->

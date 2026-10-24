@@ -7,9 +7,9 @@
     --color-main:#B7A5F6;
     --color-sub:#DCCEF6;
     --color-sub2:#FEFDFF;
-    --color-title:#6F68C9;
-    --color-tool:#F6F6F6;
-    --color-project:#F8F5FF;
+    --color-title:#6F68C9; /* 섹션 타이틀 */
+    --color-tool:#F6F6F6; /* 스킬&툴 박스 */
+    --color-project:#F8F5FF; /* 프로젝트 배경 */
 
     /* 폰트 크기 */
     --font-size-14:0.875em;
@@ -49,6 +49,64 @@
     --spacing-160:160px;
     --spacing-350:350px;
     --spacing-450:450px;
+}
+
+
+/* 반복 클래스 */
+/* ---- 가로 ---- */
+.flex-row-nowrap {
+    display:flex;
+    flex-flow:row nowrap;
+} /* 줄바꿈 없음 */
+
+.flex-row-wrap {
+    display:flex;
+    flex-flow:row wrap;
+} /* 줄바꿈 있음 */
+
+.flex-row-center {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-row-between-center {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+.flex-row-between-start {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* ---- 세로 ---- */
+.flex-col-nowrap {
+    display:flex;
+    flex-flow:column nowrap;
+} /* 줄바꿈 없음 */
+
+.flex-col-wrap {
+    display:flex;
+    flex-flow:column wrap;
+} /* 줄바꿈 있음 */
+
+.flex-col-center {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-col-between-start {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items:flex-start;
 }
 
 
