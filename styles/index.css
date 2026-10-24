@@ -65,24 +65,90 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info p .name_ko {}
 .main_slide .swiper-wrapper #profile .container .profile_wrap .photo_side .user_info p .name_en {font-size:var(--font-size-14);}
 /* ---- 큰 오른쪽 : 이력서 ---- */
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side {
+    /* flex-row-between-start 적용중 */
+    width:1100px;
+    gap:98px;
+}
 /* ---- 작은 왼쪽 : 자격증, 알바, 스킬 통합 디자인 ---- */
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box h3 {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li .date {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li .desc {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side {
+    /* flex-col-nowrap 적용중 */
+    gap:80px; flex:1;
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box {display:flex; flex-flow:column nowrap; gap:26px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box h3 {
+    font-size:var(--font-size-24); font-weight:var(--font-weight-medium);
+    display:flex; align-items:center; gap:10px;
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box h3::after {
+    content:""; display:block;
+    flex:1; height:1px; background:var(--color-title);
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul {display:flex; flex-flow:column nowrap; gap:20px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li {display:flex; flex-flow:row nowrap;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li .date {width:120px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box ul li .desc {font-weight:var(--font-weight-medium);}
 /* Skill & Toll 섹션 통합 디자인 */
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box .skill_grid .skill_icon img {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box .skill_grid .skill_icon span {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box .skill_grid {display:flex; flex-flow:row wrap; gap:14px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box .skill_grid .skill_icon {
+    display:flex; flex-flow:column nowrap; 
+    align-items:center; gap:10px;
+    width:157px; padding:12px 0;
+    background:var(--color-tool); border-radius:var(--radius-10);
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box .skill_grid .skill_icon img {width:40px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .left_side .info_box .skill_grid .skill_icon span {font-size:var(--font-size-14); font-weight:var(--font-weight-medium);}
 /* ---- 작은 오른쪽 : 교육, 키워드 통합 디자인 ---- */
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box h3 {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li .date {}
-.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li .desc {}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side {
+    /* flex-col-nowrap 적용중 */
+    gap:80px; flex:1;
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box {display:flex; flex-flow:column nowrap; gap:26px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box h3 {
+    font-size:var(--font-size-24); font-weight:var(--font-weight-medium);
+    display:flex; align-items:center; gap:10px;
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box h3::after {
+    content:""; display:block;
+    flex:1; height:1px; background:var(--color-title);
+}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul {display:flex; flex-flow:column nowrap; gap:20px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li {display:flex; flex-flow:row nowrap;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li .date {width:120px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box ul li .desc {font-weight:var(--font-weight-medium);}
+/* 교육 top, btm 개인 디자인 */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box .top {padding-bottom:30px; border-bottom:1px dashed rgba(0, 0, 0, 0.5);}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box .btm {}
+/* 키워드 개인 디자인 */
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box .keyword_list {display:flex; flex-flow:row wrap; gap:15px 10px;}
+.main_slide .swiper-wrapper #profile .container .profile_wrap .info_side .right_side .info_box .keyword_list li {
+    padding:12px 18px; background:var(--color-background);
+    border:1px solid #000; border-radius:var(--radius-50);
+    font-weight:var(--font-weight-medium);
+}
+/* ---------------------------------- 3행-웹&앱 프로젝트 */
+.main_slide .swiper-wrapper #project {background:var(--color-project); padding:120px;}
+.main_slide .swiper-wrapper #project .container {
+    /* flex-col-nowrap 적용중 */
+    gap:95px;
+}
+.main_slide .swiper-wrapper #project .container .pj_header {}
+.main_slide .swiper-wrapper #project .container .pj_header .pj_title {font-size:var(--font-size-44); font-weight:var(--font-weight-semibold); color:var(--color-title); margin-bottom:10px;}
+.main_slide .swiper-wrapper #project .container .pj_header .pj_desc {}
+/* 프로젝트 리스트 통합 디자인 */
+.main_slide .swiper-wrapper #project .container ul {
+    /* flex-row-nowrap 적용중 */
+    gap:20px;
+}
+.main_slide .swiper-wrapper #project .container ul li {width:100%; height:675px; border-radius:var(--radius-30);}
+.main_slide .swiper-wrapper #project .container ul li .pj_link {background-position:center; background-size:cover; background-repeat:no-repeat;}
+.main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay {padding:70px 50px 0; display:flex; flex-flow:row nowrap; justify-content:space-between; background:rgba(0, 0, 0, 0.35);}
+.main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info {}
+.main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info * {color:var(--color-background);}
+.main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info h3 {font-size:var(--font-size-36); font-weight:var(--font-weight-medium); margin-bottom:16px;}
+.main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info p {font-size:var(--font-size-20);}
+.main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .arrow_icon {}
+/* 프로젝트 리스트 개인 디자인 */
+.main_slide .swiper-wrapper #project .container ul li .pj1 {}
+.main_slide .swiper-wrapper #project .container ul li .pj2 {}
+.main_slide .swiper-wrapper #project .container ul li .pj3 {}

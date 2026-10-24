@@ -73,9 +73,9 @@
                             </div><!-- e:user_info -->
                         </div><!-- e:photo_side -->
                         <!-- ---- 오른쪽 : 이력서 ---- -->
-                        <div class="info_side">
+                        <div class="info_side flex-row-between-start">
                             <!-- ---- 왼쪽 : 자격증, 알바, 스킬 ---- -->
-                            <div class="left_side">
+                            <div class="left_side flex-col-nowrap">
                                 <!-- Lisence 섹션 -->
                                 <div class="info_box">
                                     <h3>Lisence</h3>
@@ -124,12 +124,12 @@
                                 </div><!-- e:info_box -->
                             </div><!-- e:left_side -->
                             <!-- ---- 오른쪽 : 교육, 키워드 ---- -->
-                            <div class="right_side">
+                            <div class="right_side flex-col-nowrap">
                                 <!-- Education 섹션 -->
                                 <div class="info_box">
                                     <h3>Education</h3>
                                     <!-- 학교 모음 -->
-                                    <ul class="info_list">
+                                    <ul class="info_list top">
                                         <li>
                                             <span class="date">24.02</span>
                                             <span class="desc">인천재능대학교 호텔외식조리과(베이커리 카페 전공) 졸업</span>
@@ -144,7 +144,7 @@
                                         </li>
                                     </ul><!-- e:info_list (top) -->
                                     <!-- 교육 모음 -->
-                                    <ul class="info_list">
+                                    <ul class="info_list btm">
                                         <li>
                                             <span class="date">26.10</span>
                                             <span class="desc">UI/UX 반응형 웹디자인 & 웹퍼블리셔 양성과정 수료</span>
@@ -184,7 +184,50 @@
             <!-- ----2행 끝---- -->
             <!-- 3행-웹&앱 프로젝트 -->
             <div class="swiper-slide" id="project">
-                <div class="container"></div>
+                <div class="container flex-col-nowrap">
+                    <div class="pj_header">
+                        <h2 class="pj_title">WEP & APP PROJECT</h2>
+                        <p class="pj_desc">이미지 클릭 시 해당 프로젝트로 이동합니다.</p>
+                    </div>
+                    <ul class="pj_list flex-row-nowrap">
+                        <!-- ---- 웹 프로젝트 카드 1 ---- -->
+                        <li class="pj_item">
+                            <a href="#" class="pj_link pj1">
+                                <div class="pj_overlay">
+                                    <div class="pj_info">
+                                        <h3>Oh, lolly day</h3>
+                                        <p>라이프 스타일 브랜드</p>
+                                    </div>
+                                    <p class="arrow_icon"><img src="./images/pj_link_icon.png" alt=""></p>
+                                </div><!-- e:pj_overlay -->
+                            </a><!-- e:pj_link -->
+                        </li><!-- e:pj_item -->
+                        <!-- ---- 웹 프로젝트 카드 2 ---- -->
+                        <li class="pj_item">
+                            <a href="#" class="pj_link pj2">
+                                <div class="pj_overlay">
+                                    <div class="pj_info">
+                                        <h3>TS 트릴리온</h3>
+                                        <p>헤어 케어 브랜드</p>
+                                    </div>
+                                    <p class="arrow_icon"><img src="./images/pj_link_icon.png" alt=""></p>
+                                </div><!-- e:pj_overlay -->
+                            </a><!-- e:pj_link -->
+                        </li><!-- e:pj_item -->
+                        <!-- ---- 앱 프로젝트 카드 1 ---- -->
+                        <li class="pj_item">
+                            <a href="#" class="pj_link pj3">
+                                <div class="pj_overlay">
+                                    <div class="pj_info">
+                                        <h3>Dreaming Diary</h3>
+                                        <p>드림 & 라이프 저널</p>
+                                    </div>
+                                    <p class="arrow_icon"><img src="./images/pj_link_icon.png" alt=""></p>
+                                </div><!-- e:pj_overlay -->
+                            </a><!-- e:pj_link -->
+                        </li><!-- e:pj_item -->
+                    </ul><!-- e:pj_list -->
+                </div><!-- e:container -->
             </div><!-- e:project -->
             <!-- ----3행 끝---- -->
             <!-- 4행-오롤리데이 리디자인 -->
