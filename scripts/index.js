@@ -6,3 +6,17 @@ const mainSlide = new Swiper('.main_slide', {
     slidesPerView:1,
     mousewheel:true,
 });
+
+// 8행-그래픽 디자인(포스터) 스와이퍼 연결
+const pstSlide = new Swiper('.pst_slide', {
+    nested:true,
+    direction:'horizontal',
+    slidesPerView:5.2,
+    spaceBetween:20,
+    loop:true,
+    speed:2000,
+    autoplay:{
+        delay:2000,
+        disableOnInteraction:false,
+    },
+});
