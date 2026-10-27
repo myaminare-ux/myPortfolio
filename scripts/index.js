@@ -11,7 +11,7 @@ const mainSlide = new Swiper('.main_slide', {
 const pstSlide = new Swiper('.pst_slide', {
     nested:true,
     direction:'horizontal',
-    slidesPerView:5.2,
+    slidesPerView:4.5,
     spaceBetween:20,
     loop:true,
     speed:2000,
