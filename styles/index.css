@@ -140,15 +140,73 @@ html {scroll-behavior:smooth;}
     /* flex-row-nowrap 적용중 */
     gap:20px;
 }
-.main_slide .swiper-wrapper #project .container ul li {width:100%; height:675px; border-radius:var(--radius-30);}
-.main_slide .swiper-wrapper #project .container ul li .pj_link {background-position:center; background-size:cover; background-repeat:no-repeat;}
-.main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay {padding:70px 50px 0; display:flex; flex-flow:row nowrap; justify-content:space-between; background:rgba(0, 0, 0, 0.35);}
-.main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info {}
+.main_slide .swiper-wrapper #project .container ul li {width:100%; height:675px; border-radius:var(--radius-30); overflow:hidden;}
+.main_slide .swiper-wrapper #project .container ul li .pj_link {background-position:center; background-size:cover; background-repeat:no-repeat; width:100%; height:100%;
+    display:block;}
+    .main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay {padding:70px 50px 0; height:100%; display:flex; flex-flow:row nowrap; justify-content:space-between; background:rgba(0, 0, 0, 0.35); opacity:0;}
+    .main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay:hover {opacity:1; transition:opacity 1s ease;}
+    .main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info {}
 .main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info * {color:var(--color-background);}
 .main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info h3 {font-size:var(--font-size-36); font-weight:var(--font-weight-medium); margin-bottom:16px;}
 .main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .pj_info p {font-size:var(--font-size-20);}
 .main_slide .swiper-wrapper #project .container ul li .pj_link .pj_overlay .arrow_icon {}
 /* 프로젝트 리스트 개인 디자인 */
-.main_slide .swiper-wrapper #project .container ul li .pj1 {}
-.main_slide .swiper-wrapper #project .container ul li .pj2 {}
-.main_slide .swiper-wrapper #project .container ul li .pj3 {}
+.main_slide .swiper-wrapper #project .container ul li .pj1 {background-image:url(../images/lollyday_mok.jpg);}
+.main_slide .swiper-wrapper #project .container ul li .pj2 {background-image:url(../images/ts_mok.jpg); background-position:70%;}
+.main_slide .swiper-wrapper #project .container ul li .pj3 {background-image:url(../images/diary_mok.jpg);}
+/* ---------------------------------- 4행-오롤리데이 리디자인 */
+.main_slide .swiper-wrapper #old {
+    background-image:url(../images/lollyday_mok_v2.jpg);
+    background-position:center; background-size:cover;
+    background-repeat:no-repeat; padding:120px;
+    position:relative;
+}
+.main_slide .swiper-wrapper #old::after {
+    content:''; display:block; width:100%; height:100%;
+    position:absolute; top:0; left:0; 
+    background:rgba(0, 0, 0, 0.4); z-index:1;
+}
+.main_slide .swiper-wrapper #old .container {
+    position:relative; z-index:2;
+    display:flex; justify-content:flex-end; align-items:center;
+}
+.main_slide .swiper-wrapper #old .container .info_area {
+    /* flex-col-nowrap 적용중 */
+    width:565px; gap:50px;
+}
+/* ---- 1섹션 : 타이틀 ---- */
+.main_slide .swiper-wrapper #old .container .info_area .info_header {
+    /* flex-col-nowrap 적용중 */
+    gap:14px;
+}
+.main_slide .swiper-wrapper #old .container .info_area .info_header * {color:var(--color-background);}
+.main_slide .swiper-wrapper #old .container .info_area .info_header .sub_num {font-size:var(--font-size-18); font-weight:var(--font-weight-medium);}
+.main_slide .swiper-wrapper #old .container .info_area .info_header .title {font-size:var(--font-size-34); font-weight:var(--font-weight-bold);}
+/* ---- 2섹션 : 요약 ---- */
+.main_slide .swiper-wrapper #old .container .info_area .overview {
+    /* flex-col-nowrap 적용중 */
+    gap:6px;
+}
+.main_slide .swiper-wrapper #old .container .info_area .overview * {color:var(--color-background);}
+.main_slide .swiper-wrapper #old .container .info_area .overview .ov_title {font-weight:var(--font-weight-bold);}
+.main_slide .swiper-wrapper #old .container .info_area .overview .dese {font-size:var(--font-size-15); font-weight:var(--font-weight-medium); line-height:var(--line-height-m); word-break:keep-all;}
+/* ---- 3섹션 : 상세 정보 ---- */
+.main_slide .swiper-wrapper #old .container .info_area .info_list {
+    /* flex-col-nowrap 적용중 */
+    gap:20px;
+}
+.main_slide .swiper-wrapper #old .container .info_area .info_list * {color:var(--color-background); font-size:var(--font-size-14);}
+.main_slide .swiper-wrapper #old .container .info_area .info_list li {display:flex; flex-flow:row nowrap; gap:10px;}
+.main_slide .swiper-wrapper #old .container .info_area .info_list li .label {display:inline-block; width:60px; font-weight:var(--font-weight-bold);}
+.main_slide .swiper-wrapper #old .container .info_area .info_list li .value {font-weight:var(--font-weight-medium);}
+.main_slide .swiper-wrapper #old .container .info_area .info_list li .value a {font-weight:var(--font-weight-medium);}
+/* ---- 4섹션 : 링크 버튼 ---- */
+.main_slide .swiper-wrapper #old .container .info_area .btn_group {
+    /* flex-row-wrap 적용중 */
+    gap:12px;
+}
+.main_slide .swiper-wrapper #old .container .info_area .btn_group * {color:var(--color-background); font-size:var(--font-size-14); font-weight:var(--font-weight-medium);}
+.main_slide .swiper-wrapper #old .container .info_area .btn_group .btn {
+    border:2px solid #fff; border-radius:var(--radius-20);
+    text-align:center; padding:10px 14px;
+}
