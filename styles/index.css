@@ -350,3 +350,35 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #poster .container .pst_slide .swiper-wrapper .swiper-slide img {width:100%; height:100%;}
 /* 포스터 스와이퍼 슬라이드 개인 디자인 시 복사 사용 */
 /* .main_slide .swiper-wrapper #poster .container .pst_slide .swiper-wrapper .pst1 {} */
+/* ---------------------------------- 8행-그래픽 디자인(상세 페이지) */
+.main_slide .swiper-wrapper #detail {background:var(--color-project); padding:120px;}
+.main_slide .swiper-wrapper #detail .container {
+    /* flex-col-nowrap 적용중 */
+    justify-content:center; gap:100px; overflow:hidden;
+}
+/* ---- 상세페이지 타이틀 ---- */
+.main_slide .swiper-wrapper #detail .container .detail_header {padding-bottom:20px; position:relative;}
+.main_slide .swiper-wrapper #detail .container .detail_header::after {
+    content:''; display:block; position:absolute;
+    bottom:0; left:0; width:100%; height:1px;
+    background-color:rgba(111, 104, 201, 0.6);
+}
+.main_slide .swiper-wrapper #detail .container .detail_header .desc {
+    /* flex-row-nowrap 적용중 */
+    gap:20px; align-items:center;
+}
+.main_slide .swiper-wrapper #detail .container .detail_header .desc .num {font-size:var(--font-size-24); font-weight:var(--font-weight-medium);}
+.main_slide .swiper-wrapper #detail .container .detail_header .desc .sub_txt {font-size:var(--font-size-20);}
+/* ---- 상세페이지 스와이퍼 ---- */
+.main_slide .swiper-wrapper #detail .container .dtl_slide {width:100%; height:696px;}
+.main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper {}
+.main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .swiper-slide {background-color:var(--color-background);}
+.main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .swiper-slide img {width:100%; height:auto;}
+.main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .swiper-slide span {}
+/* 상세 페이지 스와이퍼 슬라이드 개인 디자인 시 복사 사용 */
+.main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .dtl2,
+.main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .dtl3,
+.main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .dtl4 {
+    height:100%; display:flex; flex-flow:column; 
+    justify-content:center; align-items:center; text-align:center;
+}
