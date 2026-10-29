@@ -392,14 +392,14 @@
                         </div><!-- e:desc -->
                     </div><!-- e:poster_header -->
                     <!-- ---- 포스터 스와이퍼 ---- -->
-                    <div class="swiper pst_slide">
+                    <div class="swiper pst_slide" id="posterWrap">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide pst1"><img src="./images/fashion_design1.jpg" alt="패션 광고 그래픽 디자인1"></div>
-                            <div class="swiper-slide pst2"><img src="./images/fashion_design2.jpg" alt="패션 광고 그래픽 디자인2"></div>
-                            <div class="swiper-slide pst3"><img src="./images/ice_cream.jpg" alt="딸기 아이스크림 그래픽 디자인"></div>
-                            <div class="swiper-slide pst4"><img src="./images/paris_ad.jpg" alt="파리 여행 광고 그래픽 디자인"></div>
-                            <div class="swiper-slide pst5"><img src="./images/coffee_ad.jpg" alt="바닐라 라떼 그래픽 디자인"></div>
-                            <div class="swiper-slide pst6"><img src="./images/dokdo_ad.jpg" alt="독도의 날 그래픽 디자인"></div>
+                            <div class="swiper-slide pst1"><img src="./images/fashion_design1.jpg" alt="패션 광고 그래픽 디자인1" class="js_popup_img"></div>
+                            <div class="swiper-slide pst2"><img src="./images/fashion_design2.jpg" alt="패션 광고 그래픽 디자인2" class="js_popup_img"></div>
+                            <div class="swiper-slide pst3"><img src="./images/ice_cream.jpg" alt="딸기 아이스크림 그래픽 디자인" class="js_popup_img"></div>
+                            <div class="swiper-slide pst4"><img src="./images/paris_ad.jpg" alt="파리 여행 광고 그래픽 디자인" class="js_popup_img"></div>
+                            <div class="swiper-slide pst5"><img src="./images/coffee_ad.jpg" alt="바닐라 라떼 그래픽 디자인" class="js_popup_img"></div>
+                            <div class="swiper-slide pst6"><img src="./images/dokdo_ad.jpg" alt="독도의 날 그래픽 디자인" class="js_popup_img"></div>
                         </div><!-- e:swiper-wrapper -->
                     </div><!-- e:pst_slide -->
                 </div><!-- e:container -->
@@ -416,9 +416,9 @@
                         </div><!-- e:desc -->
                     </div><!-- e:detail_header -->
                     <!-- ---- 상세페이지 스와이퍼 ---- -->
-                    <div class="swiper dtl_slide">
+                    <div class="swiper dtl_slide" id="detailWrap">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide dtl1"><img src="./images/cosmetics.jpg" alt="화장품 광고 상세 페이지"></div>
+                            <div class="swiper-slide dtl1"><img src="./images/cosmetics.jpg" alt="화장품 광고 상세 페이지" class="js_popup_img"></div>
                             <div class="swiper-slide dtl2">
                                 <img src="#" alt="">
                                 <span>추후 추가될 예정입니다.</span>
@@ -438,15 +438,62 @@
             <!-- ----8행 끝---- -->
             <!-- 9행-마무리 -->
             <div class="swiper-slide" id="finish">
-                <div class="container"></div>
+                <!-- 테두리 전용 div -->
+                <div class="finish_border"></div>
+                <!-- 실제 컨텐츠가 들어가는 div -->
+                <div class="container flex-col-center">
+                    <!-- ---- 마무리 인사 영역 ---- -->
+                    <div class="fin_title flex-col-nowrap">
+                        <h2 class="title">THANK YOU</h2>
+                        <p class="sub_txt">더 나은 방법을 고민하는 디자이너가 되겠습니다.</p>
+                    </div><!-- e:fin_title -->
+                    <!-- ---- 연락 영역 ---- -->
+                    <div class="fin_info flex-row-nowrap">
+                        <div class="qr_icon"><img src="./images/qr_cord.png" alt="카카오톡 QR 코드입니다."></div>
+                        <div class="info_txt flex-col-nowrap">
+                            <p>CONTACTS</p>
+                            <p>박은진</p>
+                            <div class="info_list">
+                                <img src="./images/tele_num_icon.png" alt="전화번호">
+                                <span>010 - 7515 - 6867</span>
+                            </div>
+                            <div class="info_list">
+                                <img src="./images/mail_icon.png" alt="메일">
+                                <span>irin1616@naver.com</span>
+                            </div>
+                        </div><!-- e:info_txt -->
+                    </div><!-- e:fin_info -->
+                </div><!-- e:container -->
             </div><!-- e:finish -->
             <!-- ----9행 끝---- -->
         </div><!-- e:swiper-wrapper -->
         <!-- 스와이퍼 랩퍼 끝 -->
     </main><!-- e:swiper -->
     <!-- 스와이퍼 끝 -->
-    <!-- 7행 이미지 클릭 시 크게 나오게 하기 -->
-    <!-- 8행 이미지 클릭 시 크게 나오게 하기 -->
     <!-- 탭 메뉴 버튼 -->
+    <div class="menu_btn">
+        <ul class="menu_list">
+            <li class="tab1"><a href="#">HOME</a></li>
+            <li class="tab2"><a href="#">PROFILE</a></li>
+            <li class="tab3"><a href="#">PJ. ALL</a></li>
+            <li class="tab4"><a href="#">PJ. WEB</a></li>
+            <li class="tab5"><a href="#">PJ. APP</a></li>
+            <li class="tab6"><a href="#">PJ. GRAPHIC</a></li>
+            <li class="tab7"><a href="#">CONTACT</a></li>
+        </ul><!-- e:menu_list -->
+        <a href="#" class="btn_click"><img src="./images/top_icon.png" alt="메뉴 버튼"></a>
+    </div><!-- e:menu_btn -->
+    <!-- 7행 이미지 클릭 시 크게 나오게 하기 -->
+    <div class="big_pst_popup" id="bigPst_popup">
+        <div class="pop_box">
+            <img src="" alt="" class="pst_content" id="bigPoster">
+        </div>
+    </div><!-- e:big_pst_popup -->
+    <!-- 8행 이미지 클릭 시 크게 나오게 하기 -->
+    <div class="big_dtl_popup" id="bigDtl_popup">
+        <div class="pop_box">
+            <img src="" alt="" class="dtl_content" id="bigDetail">
+        </div>
+    </div><!-- e:big_dtl_popup -->
 </body>
 </html>

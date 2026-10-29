@@ -346,7 +346,7 @@ html {scroll-behavior:smooth;}
 /* ---- 포스터 스와이퍼 ---- */
 .main_slide .swiper-wrapper #poster .container .pst_slide {height:500px;}
 .main_slide .swiper-wrapper #poster .container .pst_slide .swiper-wrapper {}
-.main_slide .swiper-wrapper #poster .container .pst_slide .swiper-wrapper .swiper-slide {height:100%;}
+.main_slide .swiper-wrapper #poster .container .pst_slide .swiper-wrapper .swiper-slide {height:100%; height:100%; object-fit:contain;}
 .main_slide .swiper-wrapper #poster .container .pst_slide .swiper-wrapper .swiper-slide img {width:100%; height:100%;}
 /* 포스터 스와이퍼 슬라이드 개인 디자인 시 복사 사용 */
 /* .main_slide .swiper-wrapper #poster .container .pst_slide .swiper-wrapper .pst1 {} */
@@ -376,9 +376,120 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .swiper-slide img {width:100%; height:auto;}
 .main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .swiper-slide span {}
 /* 상세 페이지 스와이퍼 슬라이드 개인 디자인 시 복사 사용 */
+/* .main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .dtl1 {} */
 .main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .dtl2,
 .main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .dtl3,
 .main_slide .swiper-wrapper #detail .container .dtl_slide .swiper-wrapper .dtl4 {
     height:100%; display:flex; flex-flow:column; 
     justify-content:center; align-items:center; text-align:center;
+}
+/* ---------------------------------- 8행-그래픽 디자인(상세 페이지) */
+.main_slide .swiper-wrapper #finish {
+    background:linear-gradient(180deg, #B7A5F6 40%, #DCCEF6 100%);
+    padding:var(--spacing-80) 0;
+}
+.main_slide .swiper-wrapper #finish .finish_border {
+    position:absolute; top:45px; bottom:45px; left:50px; right:50px;
+    border:3px solid var(--color-background);
+}
+.main_slide .swiper-wrapper #finish .container {
+    /* flex-col-center 적용중 */
+    gap:40px;
+}
+/* ---------------------------------- 9행-마무리 */
+/* ---- 마무리 인사 영역 ---- */
+.main_slide .swiper-wrapper #finish .container .fin_title {
+    /* flex-col-nowrap 적용중 */
+    gap:10px;
+}
+.main_slide .swiper-wrapper #finish .container .fin_title * {text-align:center; color:var(--color-background);}
+.main_slide .swiper-wrapper #finish .container .fin_title .title {font-size:var(--font-size-80); font-weight:var(--font-weight-semibold);}
+.main_slide .swiper-wrapper #finish .container .fin_title .sub_txt {font-size:var(--font-size-26); font-weight:var(--font-weight-medium);}
+/* ---- 연락 영역 ---- */
+.main_slide .swiper-wrapper #finish .container .fin_info {
+    /* flex-row-nowrap 적용중 */
+    gap:20px; align-items:center;
+}
+.main_slide .swiper-wrapper #finish .container .fin_info * {color:var(--color-background);}
+.main_slide .swiper-wrapper #finish .container .fin_info .qr_icon {}
+.main_slide .swiper-wrapper #finish .container .fin_info .qr_icon img {width:160px;}
+.main_slide .swiper-wrapper #finish .container .fin_info .info_txt {
+    /* flex-col-nowrap 적용중 */
+    gap:20px;
+}
+.main_slide .swiper-wrapper #finish .container .fin_info .info_txt * {font-size:var(--font-size-18); font-weight:var(--font-weight-medium);}
+.main_slide .swiper-wrapper #finish .container .fin_info .info_txt p {}
+.main_slide .swiper-wrapper #finish .container .fin_info .info_txt .info_list {display:flex; flex-flow:row nowrap; align-items:center; gap:10px;}
+.main_slide .swiper-wrapper #finish .container .fin_info .info_txt .info_list img {width:20px;}
+.main_slide .swiper-wrapper #finish .container .fin_info .info_txt .info_list img span {}
+/* ---------------------------------- 메뉴 버튼 디자인 */
+.menu_btn {position:fixed; right:120px; bottom:90px; z-index:999;}
+.menu_btn .menu_list {
+    opacity:1; position:absolute;
+    right:0; bottom:100%; padding-bottom:6px;
+    display:flex; flex-flow:column nowrap;
+    justify-content:flex-end; align-items:flex-end;
+    transform:translateY(0); transition:all 0.3s ease;
+}
+.menu_btn.hide .menu_list {
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+}
+.menu_btn .menu_list li {
+    padding:10px 14px; background-color:var(--color-background);
+    border:1px solid #000; border-radius:var(--radius-20);
+    text-align:center; cursor:pointer; white-space:nowrap;
+    margin-bottom:6px;
+    display:inline-block; width:auto;
+}
+.menu_btn .menu_list li:hover {background-color:var(--color-black); color:var(--color-background);}
+.menu_btn .menu_list li:hover a {color:var(--color-background);}
+.menu_btn .menu_list li a {font-weight:var(--font-weight-medium); transition:color 0.3s ease;}
+.menu_btn .btn_click {
+    width:52px; height:52px;
+    background-color:var(--color-background);
+    border:1px solid #000; border-radius:var(--radius-50);
+    display:flex; justify-content:center; align-items:center;
+    transform:rotate(0deg); 
+    transition:rotate 0.5s ease, transform 0.5s ease, ackground-color 0.5s ease;
+}
+.menu_btn.hide .btn_click {transform:rotate(180deg);}
+.menu_btn .btn_click:hover {background-color:var(--color-black);}
+.menu_btn .btn_click:hover img {filter:invert(1);}
+.menu_btn .btn_click img {width:30px; height:auto; transition: filter 0.3s ease;}
+/* ---------------------------------- 7행 이미지 클릭 시 큰 이미지 팝업 등장 */
+.big_pst_popup,
+.big_dtl_popup {
+    background-color:rgb(0, 0, 0, 0.5);
+    position:fixed; left:0; top:0;
+    width:100vw; height:100vh;
+    z-index:999;
+    justify-content:center; align-items:center;
+    display:none;
+}
+.big_pst_popup.active,
+.big_dtl_popup.active {display:flex;}
+.big_pst_popup .pop_box,
+.big_dtl_popup .pop_box {
+    width:90%;
+    max-width:800px;
+    max-height:90vh;
+    background-color:#fff;
+    overflow-y:auto;
+    overflow-x:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+.big_pst_popup .pop_box img,
+.big_dtl_popup .pop_box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: unset;
+}
+/* ---------------------------------- 8행 이미지 클릭 시 큰 이미지 팝업 등장 */
+.big_dtl_popup .pop_box::-webkit-scrollbar {width:6px;}
+.big_dtl_popup .pop_box::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
 }
